@@ -1,0 +1,104 @@
+/* header css */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+.desktop_header {
+          background-color: #fff;
+           height: 105px; 
+          display: flex;
+          justify-content: center;
+          font-family: 'Manrope', sans-serif;
+          
+          
+          
+}
+
+.primary_color1 {
+          color: #000000;
+          font-size: 16px;
+          font-weight: var(--thim-main-menu-font-weight);
+          padding: 42px 10px 65px 20px;
+          font-family: 'Manrope', sans-serif !important;
+         
+}
+.primary_color1:hover {
+          cursor: pointer;
+          text-decoration: none !important;
+          border-top: 3px solid #ffb606;
+          transition: width 8s ease;
+          
+}
+.search_icon {
+          color: #3a3a3a !important;
+          padding: 19px 9px 5px;
+          border: 2px solid #ffd400;
+          border-radius: 50%;
+          /* font-size: 7px; */
+          transform: translateX(180px);
+      }
+      .search_icon:hover {
+                color: #ffd400 !important;
+      }
+.dropdown:hover {
+          cursor: pointer;
+          color: #ffb606;
+          font-weight: 550;
+
+}
+.desktop_upheader {
+          background-color: #fff;
+          height: 57.6px;
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px dashed #ddd;
+}
+
+.upheader_element {
+          color: #828282 !important;
+          font-size: 14px;
+         
+          padding: 11px;
+}
+.log_reg{
+          color: #828282 !important;
+          font-size: 14px;
+          padding: 12px;
+         
+          
+}
+.nav_links {
+          display: flex;
+          flex-direction: row;
+}
+.login_reg {
+          
+          margin-left: 790px;
+}
+.icon_align {
+          display: flex;
+}
+
+
+
+/* responsive navbar */
+
+@media only screen and (max-width: 600px) {
+    .login_reg {
+          
+        margin-left: 220px;
+        font-family: 'Manrope', sans-serif;
+}
+.desktop_upheader {
+    
+    height: 45.6px;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+}
+
+
+
+/* ################################## */
+
+/* submenu style */
+
