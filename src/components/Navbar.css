@@ -13,7 +13,7 @@
 }
 
 .primary_color1 {
-          color: #000000;
+          color: #000000 !important;
           font-size: 16px;
           font-weight: var(--thim-main-menu-font-weight);
           padding: 42px 10px 65px 20px;
@@ -71,7 +71,8 @@
 }
 .login_reg {
           
-          margin-left: 790px;
+          margin-left: 763px;
+          
 }
 .icon_align {
           display: flex;
@@ -92,8 +93,35 @@
     height: 45.6px;
     font-family: 'Manrope', sans-serif;
 }
+.upheader_element {
+    color: #828282 !important;
+    font-size: 14px;
+   
+    padding: 11px;
+}
+.log_reg{
+    color: #828282 !important;
+    font-size: 14px;
+    padding: 12px;
+   
+    
+}
+.primary_color1 {
+    color: #000000 !important;
+}
 
 
+}
+@media only screen and (max-width: 360px) {
+    .log_reg {
+        color: #828282 !important;
+        font-size: 14px;
+        padding: 9px;
+    }
+    .MuiToolbar-gutters {
+        padding-left: 1px !important;
+     
+    }
 }
 
 
