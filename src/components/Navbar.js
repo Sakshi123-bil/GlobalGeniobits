@@ -19,12 +19,12 @@ import clsx from "clsx";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import HomeIcon from '@material-ui/icons/Home';
-import SchoolIcon from '@material-ui/icons/School';
-import FeaturedPlayListIcon from '@material-ui/icons/FeaturedPlayList';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import HomeIcon from "@material-ui/icons/Home";
+import SchoolIcon from "@material-ui/icons/School";
+import FeaturedPlayListIcon from "@material-ui/icons/FeaturedPlayList";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
@@ -276,17 +276,19 @@ export default function Navbar() {
           button
           key={"HOME"}
           onClick={() => {
-            window.location = "/#about";
+            window.location = "/#Home";
           }}
         >
-          <ListItemIcon><HomeIcon  color={"primary"}/> </ListItemIcon>
+          <ListItemIcon>
+            <HomeIcon color={"primary"} />{" "}
+          </ListItemIcon>
           <ListItemText primary={"HOME"} />
         </ListItem>
         <ListItem
           button
           key={"INSTITUTES"}
           onClick={() => {
-            window.location = "/#courses";
+            window.location = "/#institutes";
           }}
         >
           <ListItemIcon>
@@ -322,7 +324,7 @@ export default function Navbar() {
         <ListItem button key={"CONTACT US"}>
           <ListItemIcon>
             {/* <Badge badgeContent={5} color="secondary"> */}
-              <ContactMailIcon color={"primary"} />
+            <ContactMailIcon color={"primary"} />
             {/* </Badge> */}
           </ListItemIcon>
           <ListItemText primary={"CONTACT US"} />
@@ -339,30 +341,9 @@ export default function Navbar() {
           </ListItemIcon>
           <ListItemText primary={"ABOUT US"} />
         </ListItem>
-        <ListItem
-          button
-          key={"LOGIN"}
-          onClick={() => {
-            window.location = "/#contact";
-          }}
-        >
-          <ListItemIcon>
-            {/* <ContactMailIcon color={"primary"} /> */}
-          </ListItemIcon>
-          <ListItemText primary={"LOGIN"} />
-        </ListItem>
-        <ListItem
-          button
-          key={"REGISTER"}
-          onClick={() => {
-            window.location = "/#contact";
-          }}
-        >
-          <ListItemIcon>
-            {/* <ContactMailIcon color={"primary"} /> */}
-          </ListItemIcon>
-          <ListItemText primary={"REGISTER"} />
-        </ListItem>
+        
+          
+       
       </List>
     </div>
   );
@@ -408,58 +389,62 @@ export default function Navbar() {
         >
           <Toolbar>
             <Typography className={classes.sectionTab}>
-              <div className='nav_links'>
-                <div >
+              <div className="nav_links">
+                <div>
                   <Link
                     href="/#authors"
                     className={classes.links}
                     className="upheader_element"
-                  > 
+                  >
                     HAVE ANY QUESTION?
                   </Link>
-                  
-                  <PhoneIphoneIcon style={{color:"#ffb606", fontSize:20, marginBottom:-5, }}/>
+
+                  <PhoneIphoneIcon
+                    style={{ color: "#ffb606", fontSize: 20, marginBottom: -5 }}
+                  />
                   <Link
                     href="/#authors"
                     className={classes.links}
                     className="upheader_element"
-                    style={{borderRight:"1px solid #e8e8e8"}}
-                    
+                    style={{ borderRight: "1px solid #e8e8e8" }}
                   >
                     (+91)9960436653
                   </Link>
-                  <MailOutlineIcon style={{color:"#ffb606", fontSize:22, marginBottom:-5,  marginLeft:13}} />
+                  <MailOutlineIcon
+                    style={{
+                      color: "#ffb606",
+                      fontSize: 22,
+                      marginBottom: -5,
+                      marginLeft: 13,
+                    }}
+                  />
                   <Link
                     href="/#authors"
                     className={classes.links}
                     className="upheader_element"
-                   
-                    
                   >
                     contact@geniobits.com
                   </Link>
                 </div>
-               
               </div>
             </Typography>
             <div className="login_reg">
-                  <Link
-                    href="/#authors"
-                    className={classes.links}
-                    className="log_reg"
-                    style={{borderRight:"1px solid #e8e8e8"}}
-                  >
-                    REGISTER
-                   
-                  </Link>
-                  <Link
-                    href="/#authors"
-                    className={classes.links}
-                    className="log_reg"
-                  >
-                     LOGIN
-                  </Link>
-                </div>
+              <Link
+                href="/#authors"
+                className={classes.links}
+                className="log_reg"
+                style={{ borderRight: "1px solid #e8e8e8" }}
+              >
+                REGISTER
+              </Link>
+              <Link
+                href="/#authors"
+                className={classes.links}
+                className="log_reg"
+              >
+                LOGIN
+              </Link>
+            </div>
           </Toolbar>
         </AppBar>
       </div>
@@ -507,83 +492,56 @@ export default function Navbar() {
 
             <Typography className={classes.sectionTab}>
               <Link
-                href="/#about"
+                href="/#Home"
                 className={classes.links}
                 className="primary_color1"
               >
                 HOME
               </Link>
               <Link
-                href="/#courses"
+                href="/#institutes"
                 className={classes.links}
                 className="primary_color1"
               >
-                <select
-                  style={{ border: "none", fontSize: 14, fontWeight: 540,  }}
-                  className="dropdown"
-                  name="selectList"
-                  value="INSTITUTES"
-                  id="selectList"
-                >
-                  <option style={{ border: "none" }} value="option 1">
-                    INSTITUTES
-                  </option>
-                   
-                  <option style={{ border: "none" }} value="option 1">
-                    Catogories
-                  </option>
-                   
-                  <option style={{ border: "none" }} value="option 2">
-                    Education
-                  </option>
-                  <option style={{ border: "none" }} value="option 2">
-                    Acting
-                  </option>
-                  <option style={{ border: "none" }} value="option 2">
-                    Drama
-                  </option>
-                  <option style={{ border: "none" }} value="option 2">
-                    Singing
-                  </option>
-                </select>
+                INSTITUTES
               </Link>
               <Link
-                href="/#authors"
+                href="/#Features"
                 className={classes.links}
                 className="primary_color1"
               >
                 FEATURES
               </Link>
               <Link
-                href="/#authors"
+                href="/#Prices"
                 className={classes.links}
                 className="primary_color1"
               >
                 PRICES
               </Link>
               <Link
-                href="/#authors"
+                href="/#Courses"
                 className={classes.links}
                 className="primary_color1"
               >
                 COURSES
               </Link>
               <Link
-                href="/#authors"
+                href="/#Blogs"
                 className={classes.links}
                 className="primary_color1"
               >
                 BLOGS
               </Link>
               <Link
-                href="/#authors"
+                href="/#Contact Us"
                 className={classes.links}
                 className="primary_color1"
               >
                 CONTACT US
               </Link>
               <Link
-                href="/#authors"
+                href="/#About Us"
                 className={classes.links}
                 className="primary_color1"
               >

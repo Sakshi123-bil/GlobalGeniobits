@@ -6,7 +6,7 @@ import DateFnsUtils from "@date-io/date-fns";
 
 
 import {MuiPickersUtilsProvider} from "@material-ui/pickers";
-// import {ALL_LINKS} from "./constants";
+//  import {ALL_LINKS} from "./constants";
 import {BrowserRouter, Route, Redirect, Switch} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
@@ -16,6 +16,7 @@ import RegisterNow from "./components/RegisterNow";
 // import ScrollToTop from "./components/general/ScrollToTop";
 // import PrivateRoute from "./components/general/PrivateRoute";
 // import Footer from "./components/general/footer";
+
 
 
 
@@ -71,32 +72,33 @@ const theme = createTheme({
 
 function App() {
 
-//   const pages = [
-//     ALL_LINKS.home,
+  // const pages = [
+  //   ALL_LINKS.home,
 
-//   ];
+  // ];
 
   return (
     <>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <ThemeProvider theme={theme}>
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <div className="App">
                   <Navbar
 
-                  />
+                  />    
                 
 
                   
 
             </div>
+            <Slider></Slider>
           </MuiPickersUtilsProvider>
         </ThemeProvider>
       </BrowserRouter>
        <FeatureCard></FeatureCard>
        <PopularInstituteCategory></PopularInstituteCategory>
-       <RegisterNow></RegisterNow> */}
-      <Slider></Slider>
+       <RegisterNow></RegisterNow> 
+     
       </>
   );
 }

@@ -16,6 +16,7 @@ import {FloatingLettersTextBuilder } from 'react-animated-text-builders'
 
 
 
+ 
 const useStyles = makeStyles({
 
     LeftConatiner: {
@@ -101,14 +102,14 @@ function Slider() {
                    
                     <Typography variant="h5" style={{ color: 'white', textAlign: 'center', letterSpacing: 2 }} className={classes.leftLineOne}>
                       
-                        <FloatingLettersTextBuilder
+                        {/* <FloatingLettersTextBuilder
                         style={{ color: 'white', textAlign: 'center', letterSpacing: 2 ,}} className={classes.leftLineOne}
                             floatingSpeed={500}
                             lettersAppearanceDelay={100}
                             animationMaxMargin={"200px"}
                             animationMinMargin={"0px"}
                           
-                        >   The Best theme for </FloatingLettersTextBuilder>
+                        >   The Best theme for </FloatingLettersTextBuilder> */}
                     </Typography>
 
 
@@ -146,7 +147,7 @@ function Slider() {
                         >experts.join 17 millions learners today</FloatingLettersTextBuilder>
                     </Typography>
 
-                    <Button variant="contained" style={{ backgroundColor: 'white', color: 'black', padding: 20, borderRadius: 40, marginLeft: 210, marginTop: 20 }}><ArrowRightAlt style={{ fill: 'yellow' }} ></ArrowRightAlt>Buy eduma Now</Button>
+                    <Button className="Buy_btn" variant="contained" style={{ backgroundColor: 'white', color: 'black', padding: 20, borderRadius: 40, marginLeft: 210, marginTop: 20 }}><ArrowRightAlt style={{ fill: 'yellow' }} ></ArrowRightAlt>Buy eduma Now</Button>
                 </Grid>
                 <Grid md={4} xs={0}>
                     <img src={images[currImg].img} alt="Girl in a jacket" className="SideGirl" height="880" />
